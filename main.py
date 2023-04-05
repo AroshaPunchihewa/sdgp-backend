@@ -6,7 +6,7 @@ import sklearn
 
 
 app = Flask(__name__)
-model = joblib.load('/Users/aroshapunchihewa/Documents/iit/sdgp/sleepState.joblib')
+model = joblib.load('sleepState.joblib')
 def parse_json(data):
     if isinstance(data, list):
         return [parse_json(x) for x in data]
