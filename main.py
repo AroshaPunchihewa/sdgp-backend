@@ -1,9 +1,6 @@
 import joblib
 from flask import Flask, jsonify, request
 import json
-import numpy as np
-
-
 
 app = Flask(__name__)
 model = joblib.load('sleepState.joblib')
